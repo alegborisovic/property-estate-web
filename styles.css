@@ -426,3 +426,32 @@ nav {
   position: absolute;
   border-radius: 2%;
 }
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .container .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .qr-code {
+    margin-top: 20px;
+  }
+  .qr-code canvas {
+    width: 150px;
+    height: 150px;
+  }
+}
